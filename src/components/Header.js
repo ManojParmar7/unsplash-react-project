@@ -35,7 +35,7 @@ const Header = () => {
             list="cityname"
             value={searchQuery}
             onChange={handleInputChange}
-            placeholder='Search free high-resolution photos'
+            placeholder='Search free high resolution photos'
           />{" "}
           <button type="submit">
           <i>   <CiSearch></CiSearch></i>
