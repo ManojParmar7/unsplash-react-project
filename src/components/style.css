@@ -1,0 +1,235 @@
+
+.search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+  }
+  
+  .logo img {
+    width: 50%; 
+  }
+  
+  .search-container {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .search-container form {
+    position: relative;
+    width: 70%;
+  }
+  
+  .search-container input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  .search-container i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    color: #000000d2;
+}
+  .search-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul li a:hover {
+    color: #000; 
+  }
+ 
+  .image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+  }
+  
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .allButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; 
+  }
+  
+  .allButtons button {
+    margin: 5px; 
+  }
+
+
+  .product-single .thumb {
+    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-single .thumb::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;    
+}
+
+.product-single:hover .thumb::before {
+    opacity: 1;
+}
+.product-single .content {
+  padding-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-single .new{
+  background: var(--main-bg-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  left: 30px;
+  top:30px;
+  right: auto;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50%;
+  text-transform: capitalize;
+}
+
+.product-single .product-icons {
+  position: absolute;
+  bottom: 10px;
+  left: auto;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  right: -50px;
+  z-index: 9;
+}
+
+
+.product-single:hover .product-icons{
+  right: 15px;
+  transition-delay: 0.3s;
+}
+
+.product-single .product-icons li{
+  background: #fff;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 6px 0;
+}
+
+
+.skeleton-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; 
+}
+
+
